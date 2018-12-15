@@ -23,13 +23,7 @@
 - name: Install basic packages
   homebrew: name={{ item.name }} state={{ item.state }}
   with_items:
-      - {name: "autoconf", state: "present"}
       - {name: "cask", state: "present"}
-      - {name: "git", state: "present"}
-      - {name: "hub", state: "present"}
-      - {name: "ruby-build", state: "present"}
-      - {name: "rbenv", state: "present"}
-      - {name: "rbenv-default-gems", state: "present"}
       - {name: "gnu-tar", state: "present"}
       - {name: "ack", state: "present"}
       - {name: "findutils", state: "present"}
@@ -37,4 +31,14 @@
       - {name: "openssl", state: "present"}
       - {name: "gdbm", state: "present"}
       - {name: "sqlite", state: "present"}
+      - {name: "autoconf", state: "present"}
+      - {name: "git", state: "present"}
+      - {name: "hub", state: "present"}
+      - {name: "ruby-build", state: "present"}
+      - {name: "rbenv", state: "present"}
+      - {name: "rbenv-default-gems", state: "present"}
+      - {name: "luajit", state: "present"}
+      - {name: "zsh", state: "present"}
+      - {name: "lua", state: "present"}
+      - {name: "postgresql", state: "present"}
 
