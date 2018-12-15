@@ -22,7 +22,11 @@ target_packages = [
   'findutils',
   'openssl',
   'gdbm',
-  'sqlite'
+  'sqlite',
+  'lua',
+  'luajit',
+  'zsh',
+  'postgresql'
 ]
 
 target_packages.each do|package|

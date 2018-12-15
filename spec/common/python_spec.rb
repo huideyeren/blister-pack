@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-target_packages = %w(python python3)
+target_packages = %w(python python2)
 
 target_packages.each do|package|
   describe file(homebrew_cellar + '/' + package) do

@@ -17,7 +17,7 @@
   when: homebrew_update == "yes"
 
 - name: Cleanup homebrew
-  shell: brew cleanup && brew cask cleanup
+  shell: brew cleanup
   when: homebrew_update == "yes"
 
 - name: Install basic packages
@@ -37,4 +37,5 @@
       - {name: "openssl", state: "present"}
       - {name: "gdbm", state: "present"}
       - {name: "sqlite", state: "present"}
+      - {name: "mysql", state: "present"}
 
