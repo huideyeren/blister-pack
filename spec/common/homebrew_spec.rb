@@ -10,7 +10,6 @@ end
 
 target_packages = [
   'autoconf',
-  'readline',
   'cask',
   'git',
   'hub',
@@ -20,13 +19,12 @@ target_packages = [
   'gnu-tar',
   'ack',
   'findutils',
+  'readline',
   'openssl',
   'gdbm',
   'sqlite',
-  'lua',
-  'luajit',
-  'zsh',
-  'postgresql'
+  'mysql',
+  'zsh'
 ]
 
 target_packages.each do|package|

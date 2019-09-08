@@ -38,4 +38,5 @@
       - {name: "gdbm", state: "present"}
       - {name: "sqlite", state: "present"}
       - {name: "mysql", state: "present"}
+      - {name: "zsh", state: "present"}
 

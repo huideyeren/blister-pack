@@ -3,10 +3,11 @@
   with_items:
       - {name: "python", state: "present"}
       - {name: "python2", state: "present"}
+      - {name: "pyenv", state: "present"}
 
 - name: Install PyPI packages
   pip: name={{ item.name }}
   with_items:
       - {name: "virtualenv"}
       - {name: "virtualenvwrapper"}
-      - {name: "mercurial"}
+      - {name: "pipenv"}

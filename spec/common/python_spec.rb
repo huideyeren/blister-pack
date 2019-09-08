@@ -15,5 +15,5 @@ describe command('which virtualenv') do
   its(:stdout) { should match(%r{/usr/local/bin/virtualenv}) }
 end
 describe command('which hg') do
-  its(:stdout) { should match(%r{/usr/local/bin/hg}) }
+  its(:stdout) { should match(%r{/usr/local/bin/pipenv}) }
 end
