@@ -23,6 +23,7 @@ target_packages = [
   'openssl',
   'gdbm',
   'sqlite',
+  'vim',
   'lua',
   'luajit',
   'zsh',

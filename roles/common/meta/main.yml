@@ -4,5 +4,6 @@ dependencies:
   - { role: common/ruby }
   - { role: common/nodejs }
   - { role: common/golang }
+  - { role: common/dotnet }
   #- { role: common/nginx }
-  - { role: common/dnsmasq }
+  #- { role: common/dnsmasq }

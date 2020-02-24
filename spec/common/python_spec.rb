@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-target_packages = %w(python python3)
+target_packages = %w(python python3 pyenv)
 
 target_packages.each do|package|
   describe file(homebrew_cellar + '/' + package) do
@@ -16,4 +16,7 @@ describe command('which virtualenv') do
 end
 describe command('which hg') do
   its(:stdout) { should match(%r{/usr/local/bin/hg}) }
+end
+describe command('which pipenv') do
+  its(:stdout) { should match(%r{/usr/local/bin/pipenv}) }
 end

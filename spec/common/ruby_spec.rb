@@ -1,7 +1,8 @@
 require 'spec_helper'
 
 target_versions = [
- '2.5.3'
+ '2.6.5',
+ '2.7.0'
 ]
 if travis_build_skip?
  puts 'skip rbenv test. ' + __FILE__

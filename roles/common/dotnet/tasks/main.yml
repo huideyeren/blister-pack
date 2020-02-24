@@ -1,0 +1,4 @@
+- name: Install .NET Core from homebrew
+  homebrew: name={{ item.name }} state={{ item.state }}
+  with_items:
+      - {name: "dotnet", state: "present"}

@@ -7,4 +7,4 @@
 - name: Install nodejs by nodebrew
   command: nodebrew install-binary {{ item.version }} creates={{ home_path }}/.nodebrew/node/{{ item.version }}
   with_items:
-      - {version: "v10.14.2"}
+      - {version: "v12.16.1"}

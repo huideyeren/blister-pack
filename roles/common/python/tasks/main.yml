@@ -1,8 +1,9 @@
-- name: Install python from hombrew
+- name: Install python from homebrew
   homebrew: name={{ item.name }} state={{ item.state }}
   with_items:
       - {name: "python", state: "present"}
       - {name: "python3", state: "present"}
+      - {name: "pyenv", state: "present"}
 
 - name: Install PyPI packages
   pip: name={{ item.name }}
@@ -10,3 +11,4 @@
       - {name: "virtualenv"}
       - {name: "virtualenvwrapper"}
       - {name: "mercurial"}
+      - {name: "pipenv"}

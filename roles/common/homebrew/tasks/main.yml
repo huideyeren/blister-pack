@@ -37,6 +37,7 @@
       - {name: "ruby-build", state: "present"}
       - {name: "rbenv", state: "present"}
       - {name: "rbenv-default-gems", state: "present"}
+      - {name: "vim", state: "present"}
       - {name: "luajit", state: "present"}
       - {name: "zsh", state: "present"}
       - {name: "lua", state: "present"}
