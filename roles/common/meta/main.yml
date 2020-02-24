@@ -6,5 +6,3 @@ dependencies:
   - { role: common/golang }
   - { role: common/dotnet }
   - { role: common/casks }
-  #- { role: common/nginx }
-  #- { role: common/dnsmasq }
