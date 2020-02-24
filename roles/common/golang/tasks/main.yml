@@ -1,4 +1,4 @@
 - name: Install golang from homebrew
-  homebrew: name={{ item.name }} state={{ item.state }}
+  homebrew: name={% item.name %} state={% item.state %}
   with_items:
       - {name: "go", state: "present"}

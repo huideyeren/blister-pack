@@ -5,4 +5,5 @@ dependencies:
   - { role: common/nodejs }
   - { role: common/golang }
   - { role: common/dotnet }
+  - { role: common/java }
   - { role: common/casks }
