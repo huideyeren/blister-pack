@@ -10,7 +10,6 @@ end
 
 target_packages = [
   'autoconf',
-  'readline',
   'cask',
   'git',
   'hub',
@@ -20,6 +19,7 @@ target_packages = [
   'gnu-tar',
   'ack',
   'findutils',
+  'readline',
   'openssl',
   'gdbm',
   'sqlite',

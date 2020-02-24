@@ -17,7 +17,7 @@
   when: homebrew_update == "yes"
 
 - name: Cleanup homebrew
-  shell: brew cleanup && brew cask cleanup
+  shell: brew cleanup
   when: homebrew_update == "yes"
 
 - name: Install basic packages
@@ -44,4 +44,5 @@
       - {name: "postgresql", state: "present"}
       - {name: "fontforge", state: "present"}
       - {name: "mariadb", state: "present"}
+
 

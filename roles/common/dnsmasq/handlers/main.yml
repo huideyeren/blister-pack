@@ -1,7 +1,0 @@
-- name: load dnsmasq
-  become: yes
-  shell: launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
-
-- name: clear dns cache
-  become: yes
-  shell: dscacheutil -flushcache

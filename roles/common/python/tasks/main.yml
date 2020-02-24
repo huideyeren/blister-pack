@@ -10,5 +10,4 @@
   with_items:
       - {name: "virtualenv"}
       - {name: "virtualenvwrapper"}
-      - {name: "mercurial"}
       - {name: "pipenv"}

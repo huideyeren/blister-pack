@@ -1,7 +1,0 @@
-- name: load nginx
-  become: yes
-  shell: launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.nginx.plist
-
-- name: restart nginx
-  become: yes
-  shell: nginx -s stop && nginx
