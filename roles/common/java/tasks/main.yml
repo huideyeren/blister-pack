@@ -1,0 +1,5 @@
+- name: Install OpenJDK from homebrew
+  homebrew_cask:
+    name: "{{ item }}"
+  with_items:
+    - java
