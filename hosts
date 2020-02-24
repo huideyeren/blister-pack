@@ -5,10 +5,10 @@
 ansible_connection=local
 ansible_python_interpreter="/usr/bin/env python"
 
-home_path={% lookup('env','HOME') %}
-homebrew_prefix={% lookup('pipe','echo `brew --prefix`') %}
-homebrew_cellar={% lookup('pipe','echo `brew --cellar`') %}
+home_path={{ lookup('env','HOME') }}
+homebrew_prefix={{ lookup('pipe','echo `brew --prefix`') }}
+homebrew_cellar={{ lookup('pipe','echo `brew --cellar`') }}
 homebrew_caskroom=/opt/homebrew-cask/Caskroom/
 homebrew_update=yes
 homebrew_upgrade_all=no
-travis_build_skip={% lookup('env','TRAVIS_BUILD_SKIP') or False %}
+travis_build_skip={{ lookup('env','TRAVIS_BUILD_SKIP') or False }}

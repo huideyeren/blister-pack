@@ -1,5 +1,5 @@
 - name: Install .NET Core from homebrew
   homebrew_cask:
-    name: "{% item %}"
+    name: "{{ item }}"
   with_items:
     - dotnet-sdk
