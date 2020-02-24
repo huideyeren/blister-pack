@@ -1,16 +1,15 @@
 require 'spec_helper'
 
-describe command('which brew') do
-  its(:stdout) { should match(%r{/bin/brew}) }
-end
+# describe command('which brew') do
+#   its(:stdout) { should match(%r{/bin/brew}) }
+# end
 
-describe command('brew tap') do
-  its(:stdout) { should match(%r{caskroom\/cask}) }
-end
+# describe command('brew tap') do
+#   its(:stdout) { should match(%r{homebrew\/cask-cask}) }
+# end
 
 target_packages = [
   'autoconf',
-  'cask',
   'git',
   'hub',
   'ruby-build',

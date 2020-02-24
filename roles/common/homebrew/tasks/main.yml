@@ -1,13 +1,13 @@
 - name: Install homebrew
   command: ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" creates=/usr/local/bin/brew
 
-- name: Setup homebrew cask
-  homebrew_tap: tap={{ item.tap }} state={{ item.state }}
-  with_items:
-      - {tap: "caskroom/cask", state: "present"}
+# - name: Setup homebrew cask
+#  homebrew_tap: tap={{ item.tap }} state={{ item.state }}
+#  with_items:
+#      - {tap: "homebrew/cask-cask", state: "present"}
 
-- name: Install homebrew cask
-  homebrew: name=cask state=present
+# - name: Install homebrew cask
+#  homebrew: name=cask state=present
 
 - name: Update homebrew
   homebrew: update_homebrew={{ homebrew_update }} upgrade_all={{ homebrew_upgrade_all }}
@@ -23,7 +23,6 @@
 - name: Install basic packages
   homebrew: name={{ item.name }} state={{ item.state }}
   with_items:
-      - {name: "cask", state: "present"}
       - {name: "gnu-tar", state: "present"}
       - {name: "ack", state: "present"}
       - {name: "findutils", state: "present"}
