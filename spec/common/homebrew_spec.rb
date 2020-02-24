@@ -27,7 +27,9 @@ target_packages = [
   'lua',
   'luajit',
   'zsh',
-  'postgresql'
+  'postgresql',
+  'mariadb',
+  'fontforge'
 ]
 
 target_packages.each do|package|

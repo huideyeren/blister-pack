@@ -42,4 +42,6 @@
       - {name: "zsh", state: "present"}
       - {name: "lua", state: "present"}
       - {name: "postgresql", state: "present"}
+      - {name: "fontforge", state: "present"}
+      - {name: "mariadb", state: "present"}
 
