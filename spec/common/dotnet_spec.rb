@@ -1,14 +1,11 @@
 require 'spec_helper'
 
 target_packages = [
-  'go',
+  'dotnet-sdk',
 ]
 
-target_packages.each do|package|
-  describe file(homebrew_cellar + '/' + package) do
-    it { should be_directory }
+target_packages.each do |package|
+  describe command "brew cask list | grep -q #{package}" do
+    its(:exit_status) { should eq 0 }
   end
-end
-describe command('which dotnet') do
-  its(:stdout) { should match(%r{/usr/local/bin/dotnet}) }
 end
