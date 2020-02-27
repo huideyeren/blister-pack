@@ -1,20 +1,20 @@
 require 'spec_helper'
 
 target_packages = [
-  # "google-chrome",
+  "google-chrome",
   "microsoft-edge",
-  # "firefox",
-  # "whalebird",
-  # "discord",
-  # "slack",
-  # "steam",
-  # "visual-studio-code",
-  # "dropbox",
+  "firefox",
+  "whalebird",
+  "discord",
+  "slack",
+  "steam",
+  "visual-studio-code",
+  "dropbox",
   "libreoffice",
   "libreoffice-language-pack",
-  # "microsoft-office",
+  "microsoft-office",
   "microsoft-teams",
-  # "gimp",
+  "gimp",
   "android-file-transfer",
   "adobe-acrobat-reader"
 ]

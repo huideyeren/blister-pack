@@ -7,3 +7,4 @@ dependencies:
   - { role: common/dotnet }
   - { role: common/java }
   - { role: common/casks }
+  - { role: common/docker }
