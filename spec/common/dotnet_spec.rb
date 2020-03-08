@@ -2,6 +2,7 @@ require 'spec_helper'
 
 target_packages = [
   'dotnet-sdk',
+  'powershell',
 ]
 
 target_packages.each do |package|
