@@ -3,3 +3,7 @@
     name: "{{ item }}"
   with_items:
     - java
+- name: Install Kotlin from homebrew
+  homebrew: name={{ item.name }} state={{ item.state }}
+  with_items:
+      - {name: "kotlin", state: "present"}

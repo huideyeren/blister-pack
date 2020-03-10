@@ -9,3 +9,9 @@ target_packages.each do |package|
     its(:exit_status) { should eq 0 }
   end
 end
+describe file(homebrew_cellar + '/kotlin') do
+  it { should be_directory }
+end
+describe command('which go') do
+  its(:stdout) { should match(%r{/usr/local/bin/go}) }
+end
