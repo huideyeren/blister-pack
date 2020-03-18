@@ -43,5 +43,6 @@
       - {name: "postgresql", state: "present"}
       - {name: "fontforge", state: "present"}
       - {name: "mariadb", state: "present"}
+      - {name: "mysql-connector-c", state: "present"}
 
 
