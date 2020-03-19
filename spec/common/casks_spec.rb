@@ -20,6 +20,7 @@ target_packages = [
   # "iterm2",
   "github",
   "sourcetree",
+  "tableplus",
 ]
 
 target_packages.each do |package|

@@ -44,5 +44,14 @@
       - {name: "fontforge", state: "present"}
       - {name: "mariadb", state: "present"}
       - {name: "mysql-connector-c", state: "present"}
+      - {name: "exa", state: "present" }
+      - {name: "bat", state: "present" }
+      - {name: "fd", state: "present" }
+      - {name: "ripgrep", state: "present" }
+      - {name: "procs", state: "present" }
+      - {name: "tmux", state: "present" }
+      - {name: "lazydocker", state: "present" }
+      - {name: "lazygit", state: "present" }
+      - {name: "tig", state: "present" }
 
 
