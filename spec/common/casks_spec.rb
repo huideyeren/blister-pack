@@ -21,6 +21,7 @@ target_packages = [
   "github",
   "sourcetree",
   "tableplus",
+  "github",
 ]
 
 target_packages.each do |package|
