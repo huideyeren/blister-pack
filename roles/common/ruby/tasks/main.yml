@@ -3,6 +3,7 @@
   with_items:
     - {version: "2.6.5", option: ""}
     - {version: "2.7.0", option: ""}
+    - {version: "2.7.1", option: ""}
   when: not {{ travis_build_skip|bool }}
 
 - name: Install gem packages

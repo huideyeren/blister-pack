@@ -22,6 +22,7 @@ target_packages = [
   "sourcetree",
   "tableplus",
   "github",
+  "azure-data-studio",
 ]
 
 target_packages.each do |package|
