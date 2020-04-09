@@ -18,9 +18,7 @@ target_packages = [
   "android-file-transfer",
   "adobe-acrobat-reader",
   # "iterm2",
-  "github",
   "sourcetree",
-  "tableplus",
   "github",
   "azure-data-studio",
 ]
