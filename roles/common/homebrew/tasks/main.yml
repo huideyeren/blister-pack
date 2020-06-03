@@ -53,5 +53,6 @@
       - {name: "lazydocker", state: "present" }
       - {name: "lazygit", state: "present" }
       - {name: "tig", state: "present" }
+      - {name: "nmap", state: "present" }
 
 
