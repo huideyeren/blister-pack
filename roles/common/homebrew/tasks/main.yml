@@ -38,7 +38,7 @@
       - {name: "rbenv-default-gems", state: "present"}
       - {name: "vim", state: "present"}
       - {name: "luajit", state: "present"}
-      - {name: "zsh", state: "present"}
+      #- {name: "zsh", state: "present"}
       - {name: "lua", state: "present"}
       - {name: "postgresql", state: "present"}
       - {name: "fontforge", state: "present"}

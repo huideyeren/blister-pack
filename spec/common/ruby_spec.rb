@@ -1,8 +1,7 @@
 require 'spec_helper'
 
 target_versions = [
- '2.6.5',
- '2.7.0',
+ '2.6.6',
  '2.7.1',
 ]
 if travis_build_skip?
