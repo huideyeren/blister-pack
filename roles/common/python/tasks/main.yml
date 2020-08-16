@@ -2,7 +2,7 @@
   homebrew: name={{ item.name }} state={{ item.state }}
   with_items:
       - {name: "python", state: "present"}
-      - {name: "python3", state: "present"}
+      #- {name: "python3.7", state: "present"}
       - {name: "pyenv", state: "present"}
 
 - name: Install PyPI packages
