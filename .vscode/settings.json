@@ -1,4 +1,5 @@
 {
     "FSharp.suggestGitignore": false,
-    "FSharp.suggestSdkScripts": false
+    "FSharp.suggestSdkScripts": false,
+    "restructuredtext.confPath": ""
 }

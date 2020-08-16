@@ -13,7 +13,7 @@ Caution
 ----------------
 
 * This project is very experimental, Please consider carefully use.
-* I have check the operation only OSX Yosemite(v10.10).
+* I have check the operation only OSX Catalina(v10.15).
 
 Bootstrapping
 ----------------
@@ -28,7 +28,7 @@ Once you've done that, you can run the following to bootstrap your blister-pack:
 
  $ sudo mkdir -p /opt/blister-pack
  $ sudo chown ${USER}:staff /opt/blister-pack
- $ git clone https://github.com/tell-k/blister-pack /opt/blister-pack/repo/
+ $ git clone https://github.com/huideyeren/blister-pack /opt/blister-pack/repo/
  $ cd /opt/blister-pack/repo/
  $ git remote rm origin
  $ git remote add origin <the location of my new git repository>
