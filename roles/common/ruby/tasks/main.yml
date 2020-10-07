@@ -1,8 +1,10 @@
 - name: Install ruby by rbenv
   shell: rbenv install {{ item.option }} {{ item.version }} creates=~/.rbenv/versions/{{ item.version }}
   with_items:
+    - {version: "2.4.3", option: ""}
     - {version: "2.6.6", option: ""}
-    - {version: "2.7.1", option: ""}
+    - {version: "2.7.2", option: ""}
+    - {version: "3.0.0-preview1", option: ""}
   when: not {{ travis_build_skip|bool }}
 
 - name: Install gem packages
