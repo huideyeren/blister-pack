@@ -54,5 +54,6 @@
       - {name: "lazygit", state: "present" }
       - {name: "tig", state: "present" }
       - {name: "nmap", state: "present" }
+      - {name: "github/gh/gh", state: "present" }
 
 
