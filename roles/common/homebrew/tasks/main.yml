@@ -55,5 +55,6 @@
       - {name: "tig", state: "present" }
       - {name: "nmap", state: "present" }
       - {name: "github/gh/gh", state: "present" }
+      - {name: "gtk+3", state: "present" }
 
 
