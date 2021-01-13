@@ -5,7 +5,7 @@
     - google-chrome
     - microsoft-edge
     - firefox
-    - whalebird
+    # - whalebird
     - discord
     - slack
     # - steam
@@ -16,7 +16,7 @@
     # - microsoft-office
     - microsoft-teams
     # - gimp
-    # - android-file-transfer
+    - android-file-transfer
     - adobe-acrobat-reader
     - iterm2
     - sourcetree

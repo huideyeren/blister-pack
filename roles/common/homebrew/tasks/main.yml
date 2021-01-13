@@ -20,6 +20,11 @@
   shell: brew cleanup
   when: homebrew_update == "yes"
 
+- name: Install taps
+  homebrew_tap: tap="{{ item.name }}", state={{ item.state }}
+  with_items:
+      - { name: "heroku/brew", state: "present" }
+
 - name: Install basic packages
   homebrew: name={{ item.name }} state={{ item.state }}
   with_items:
@@ -38,7 +43,7 @@
       - {name: "rbenv-default-gems", state: "present"}
       - {name: "vim", state: "present"}
       - {name: "luajit", state: "present"}
-      #- {name: "zsh", state: "present"}
+      - {name: "openssl", state: "present"}
       - {name: "lua", state: "present"}
       - {name: "postgresql", state: "present"}
       - {name: "fontforge", state: "present"}
@@ -56,5 +61,7 @@
       - {name: "nmap", state: "present" }
       - {name: "github/gh/gh", state: "present" }
       - {name: "gtk+3", state: "present" }
+      - {name: "tree", state: "present" }
+      - {name: "heroku", state: "present" }
 
 
